@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="alphaVM" type="com.kahuripaninfox.app.modules.alpha.data.viewmodel.AlphaVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameAlpha"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageLogoKURINFOOne"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_104pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_39pxh"
+            android:layout_marginStart="@dimen/_39pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="@dimen/_333pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_logokurinfo1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_logokurinfo1"/>
+    </FrameLayout>
+</layout>

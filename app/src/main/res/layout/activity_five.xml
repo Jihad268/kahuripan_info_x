@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="fiveVM" type="com.kahuripaninfox.app.modules.five.data.viewmodel.FiveVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnframe2608590"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_8pxh"
+        android:layout_marginTop="@dimen/_10pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearFive"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_white_a700_4c_radius_4"
+                    android:id="@+id/btnFrame2608590"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_40pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_40pxh"
+                    android:paddingHorizontal="@dimen/_12pxh"
+                    android:paddingVertical="@dimen/_12pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_frame2608590" tools:ignore="ContentDescription"/>
+                <LinearLayout android:id="@+id/linearRowcreatefromfra"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumncreatefromfra"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.82"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <FrameLayout
+                            android:id="@+id/frameStackjelajahisejara"
+                            android:layout_height="@dimen/_40pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="@dimen/_99pxh" style="@style/groupStylewhite_A700">
+                            <HorizontalScrollView
+                                android:fillViewport="true"
+                                android:id="@+id/horizontalScrollHorizontalscrollcreatefromfra"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_width="match_parent" android:scrollbars="none">
+                                <FrameLayout
+                                    android:id="@+id/frameStackcreatefromfra"
+                                    android:layout_height="@dimen/_39pxv" android:layout_width="@dimen/_99pxh">
+                                    <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/viewCreatefromfra"
+                                    android:layout_gravity="end"
+                                    android:layout_height="@dimen/_39pxv" android:layout_width="@dimen/_327pxh"/>
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:id="@+id/txtSejarah"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_width="match_parent"
+                                    android:letterSpacing="0.05"
+                                    android:singleLine="true"
+                                    android:text="@{fiveVM.fiveModel.txtSejarah}"
+                                    android:textAllCaps="true"
+                                    style="@style/txt" tools:text="@string/lbl_sejarah"/>
+                                </FrameLayout>
+                            </HorizontalScrollView>
+                            <TextView android:ellipsize="end"
+                                android:gravity="top|start"
+                                android:id="@+id/txtJelajahiSejara"
+                                android:layout_gravity="bottom|start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:letterSpacing="0.03"
+                                android:singleLine="true"
+                                android:text="@{fiveVM.fiveModel.txtJelajahiSejara}"
+                                style="@style/txtNiramitmedium12" tools:text="@string/msg_jelajahi_sejara"/>
+                        </FrameLayout>
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearColumnrajaairlangga"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylecornerRadius">
+                            <FrameLayout
+                                android:id="@+id/frameStackrajaairlangga"
+                                android:layout_height="@dimen/_138pxv"
+                                android:layout_width="@dimen/_327pxh" style="@style/groupStylecornerRadius_1">
+                                <ImageView
+                                    android:id="@+id/imageRajaairlangga"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_138pxh"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_width="@dimen/_295pxh"
+                                    android:scaleType="fitXY"
+                                    imageRes="@{@drawable/img_rajaairlangga}"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_rajaairlangga"/>
+                            </FrameLayout>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtRajaAirlanggaOne"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8pxv"
+                                android:layout_width="match_parent"
+                                android:letterSpacing="0.03"
+                                android:singleLine="true"
+                                android:text="@{fiveVM.fiveModel.txtRajaAirlanggaOne}"
+                                style="@style/txtNobilemedium12" tools:text="@string/lbl_raja_airlangga"/>
+                            <TextView android:id="@+id/txtDescription"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_4pxv"
+                                android:layout_width="match_parent"
+                                android:letterSpacing="0.03"
+                                android:text="@{fiveVM.fiveModel.txtDescription}"
+                                style="@style/txtNiramitmedium10" tools:text="@string/msg_airlangga_bali"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearColumnpetawilayahke"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylecornerRadius">
+                            <ImageView
+                                android:id="@+id/imagePetawilayahKe"
+                                android:layout_height="@dimen/_169pxh"
+                                android:layout_width="match_parent"
+                                android:scaleType="fitXY"
+                                imageRes="@{@drawable/img_petawilayahke}"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_petawilayahke"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtKerajaanKahuri"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8pxv"
+                                android:layout_width="match_parent"
+                                android:letterSpacing="0.03"
+                                android:singleLine="true"
+                                android:text="@{fiveVM.fiveModel.txtKerajaanKahuri}"
+                                style="@style/txtNobilemedium12" tools:text="@string/msg_kerajaan_kahuri"/>
+                            <TextView
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtKerajaanKahuriOne"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_3pxh"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_width="match_parent"
+                                android:letterSpacing="0.03"
+                                android:text="@{fiveVM.fiveModel.txtKerajaanKahuriOne}"
+                                style="@style/txtNiramitmedium10" tools:text="@string/msg_kerajaan_kahuri2"/>
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearGooglePixel2"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                                <ImageView
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/imageBerusialebihd"
+                                    android:layout_height="@dimen/_181pxh"
+                                    android:layout_marginEnd="@dimen/_4pxh"
+                                    android:layout_marginTop="@dimen/_16pxv"
+                                    android:layout_width="match_parent"
+                                    android:scaleType="fitXY"
+                                    imageRes="@{@drawable/img_berusialebihd}"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_berusialebihd"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtDesaWotanmas"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_8pxv"
+                                    android:layout_width="match_parent"
+                                    android:letterSpacing="0.03"
+                                    android:singleLine="true"
+                                    android:text="@{fiveVM.fiveModel.txtDesaWotanmas}"
+                                    style="@style/txtNobilemedium12" tools:text="@string/lbl_desa_wotanmas"/>
+                                <TextView
+                                    android:id="@+id/txtDescriptionOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginStart="@dimen/_2pxh"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_width="match_parent"
+                                    android:letterSpacing="0.03"
+                                    android:text="@{fiveVM.fiveModel.txtDescriptionOne}"
+                                    style="@style/txtNiramitmedium10" tools:text="@string/msg_desa_wotanmas_j"/>
+                                <ImageView
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/imageJembatanlamak"
+                                    android:layout_height="@dimen/_194pxh"
+                                    android:layout_marginEnd="@dimen/_4pxh"
+                                    android:layout_marginTop="@dimen/_20pxv"
+                                    android:layout_width="match_parent"
+                                    android:scaleType="fitXY"
+                                    imageRes="@{@drawable/img_jembatanlamak}"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_jembatanlamak"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtKotaDahanapura"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_15pxv"
+                                    android:layout_width="match_parent"
+                                    android:letterSpacing="0.03"
+                                    android:singleLine="true"
+                                    android:text="@{fiveVM.fiveModel.txtKotaDahanapura}"
+                                    style="@style/txtNobilemedium12" tools:text="@string/lbl_kota_dahanapura"/>
+                                <TextView
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtDescriptionTwo"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_82pxv"
+                                    android:layout_marginEnd="@dimen/_1pxh"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_width="match_parent"
+                                    android:letterSpacing="0.03"
+                                    android:text="@{fiveVM.fiveModel.txtDescriptionTwo}"
+                                    style="@style/txtNiramitmedium10" tools:text="@string/msg_airlangga_meru"/>
+                            </LinearLayout>
+                            <View android:id="@+id/viewFrameThirteen"
+                                android:layout_height="@dimen/_1pxv"
+                                android:layout_marginTop="@dimen/_444pxv" android:layout_width="@dimen/_295pxh"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnframesix"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_27pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_weight="0.18"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylewhite_1">
+                        <ImageView android:id="@+id/imageFrameSix"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_32pxh"
+                            android:layout_marginEnd="@dimen/_19pxh"
+                            android:layout_marginStart="@dimen/_19pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="@dimen/_32pxh"
+                            android:scaleType="centerCrop"
+                            circular="@{true}"
+                            imageRes="@{@drawable/img_frame6}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_frame6"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtSejarahOne"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_19pxh"
+                            android:layout_marginStart="@dimen/_19pxh"
+                            android:layout_marginTop="@dimen/_55pxv"
+                            android:layout_width="wrap_content"
+                            android:letterSpacing="0.03"
+                            android:singleLine="true"
+                            android:text="@{fiveVM.fiveModel.txtSejarahOne}"
+                            android:textAllCaps="true"
+                            style="@style/txt_1" tools:text="@string/lbl_sejarah"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPenamaankahuri"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_19pxh"
+                            android:layout_marginStart="@dimen/_19pxh"
+                            android:layout_marginTop="@dimen/_55pxv"
+                            android:layout_width="wrap_content"
+                            android:letterSpacing="0.03"
+                            android:singleLine="true"
+                            android:text="@{fiveVM.fiveModel.txtPenamaankahuri}"
+                            android:textAllCaps="true"
+                            style="@style/txt_1" tools:text="@string/msg_penamaan_kahuri"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtCandi"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_19pxh"
+                            android:layout_marginStart="@dimen/_19pxh"
+                            android:layout_marginTop="@dimen/_56pxv"
+                            android:layout_width="wrap_content"
+                            android:letterSpacing="0.03"
+                            android:singleLine="true"
+                            android:text="@{fiveVM.fiveModel.txtCandi}"
+                            android:textAllCaps="true"
+                            style="@style/txt_1" tools:text="@string/lbl_candi"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtArkeologi"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_19pxh"
+                            android:layout_marginStart="@dimen/_19pxh"
+                            android:layout_marginTop="@dimen/_56pxv"
+                            android:layout_width="wrap_content"
+                            android:letterSpacing="0.03"
+                            android:singleLine="true"
+                            android:text="@{fiveVM.fiveModel.txtArkeologi}"
+                            android:textAllCaps="true"
+                            style="@style/txt_1" tools:text="@string/lbl_arkeologi"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtSitus"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_19pxh"
+                            android:layout_marginStart="@dimen/_19pxh"
+                            android:layout_marginTop="@dimen/_56pxv"
+                            android:layout_width="wrap_content"
+                            android:letterSpacing="0.03"
+                            android:singleLine="true"
+                            android:text="@{fiveVM.fiveModel.txtSitus}"
+                            android:textAllCaps="true"
+                            style="@style/txt_1" tools:text="@string/lbl_situs"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtKaryasastra"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_248pxv"
+                            android:layout_marginEnd="@dimen/_19pxh"
+                            android:layout_marginStart="@dimen/_19pxh"
+                            android:layout_marginTop="@dimen/_56pxv"
+                            android:layout_width="wrap_content"
+                            android:letterSpacing="0.03"
+                            android:singleLine="true"
+                            android:text="@{fiveVM.fiveModel.txtKaryasastra}"
+                            android:textAllCaps="true"
+                            style="@style/txt_1" tools:text="@string/lbl_karya_sastra"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

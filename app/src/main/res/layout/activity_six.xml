@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="sixVM" type="com.kahuripaninfox.app.modules.six.data.viewmodel.SixVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumncreatefromfra"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_210pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearSix"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:gravity="start"
+                    android:id="@+id/frameStackv804sasilifes"
+                    android:layout_height="@dimen/_385pxv" android:layout_width="match_parent">
+                    <FrameLayout
+                        android:id="@+id/frameStackcreatefromfra"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_376pxv"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="match_parent" style="@style/groupStyle">
+                        <View
+                            android:background="@drawable/rectangle_border_gray_400"
+                            android:id="@+id/viewCreatefromfra"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="1719dp" android:layout_width="@dimen/_404pxh"/>
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_white_a700_4c_radius_4"
+                            android:id="@+id/btnFrame2608590"
+                            android:layout_gravity="top|start"
+                            android:layout_height="@dimen/_40pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="@dimen/_40pxh"
+                            android:paddingHorizontal="@dimen/_12pxh"
+                            android:paddingVertical="@dimen/_12pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_frame2608590" tools:ignore="ContentDescription"/>
+                        <LinearLayout
+                            android:id="@+id/linearColumnrajaairlangga"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtRajaAirlangga"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_width="match_parent"
+                                android:letterSpacing="0.06"
+                                android:singleLine="true"
+                                android:text="@{sixVM.sixModel.txtRajaAirlangga}"
+                                android:textAllCaps="true"
+                                style="@style/txt_2" tools:text="@string/lbl_raja_airlangga"/>
+                            <TextView android:id="@+id/txtLanguage"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_3pxh"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_width="match_parent"
+                                android:letterSpacing="0.03"
+                                android:text="@{sixVM.sixModel.txtLanguage}"
+                                style="@style/txtNiramitmedium12" tools:text="@string/msg_airlangga_bali2"/>
+                            <View
+                                android:background="@color/bluegray_101"
+                                android:id="@+id/lineLineOne"
+                                android:layout_height="@dimen/_1pxv"
+                                android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_404pxh"/>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/imageRajaairlanggaOne"
+                            android:layout_gravity="top|start"
+                            android:layout_height="@dimen/_242pxv"
+                            android:layout_marginBottom="@dimen/_41pxv"
+                            android:layout_marginTop="@dimen/_41pxv"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_rajaairlangga_242x404}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rajaairlangga_242x404"/>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/imageV804sasilifes"
+                        android:layout_gravity="top|end"
+                        android:layout_height="@dimen/_49pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_53pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_v804sasilifes_49x53}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_v804sasilifes_49x53"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.04"
+                    android:lineSpacingExtra="@dimen/_5pxh"
+                    android:text="@{sixVM.sixModel.txtDescription}"
+                    style="@style/txtNiramitregular16" tools:text="@string/msg_airlangga_bali3"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="sevenVM" type="com.kahuripaninfox.app.modules.seven.data.viewmodel.SevenVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearSeven"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_20pxv"
+        android:layout_marginTop="@dimen/_8pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnframe2608590"
+            android:layout_height="0dp" android:layout_weight="1.0"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_white_a700_4c_radius_4"
+                android:id="@+id/btnFrame2608590"
+                android:layout_height="@dimen/_40pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="@dimen/_40pxh"
+                android:paddingHorizontal="@dimen/_12pxh"
+                android:paddingVertical="@dimen/_12pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_frame2608590" tools:ignore="ContentDescription"/>
+            <ImageView android:id="@+id/imageBaganscenemya"
+                android:layout_height="@dimen/_226pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_baganscenemya}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_baganscenemya"/>
+            <TextView android:id="@+id/txtSelamatdatang"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.06"
+                android:text="@{sevenVM.sevenModel.txtSelamatdatang}"
+                android:textAllCaps="true"
+                style="@style/txtNobilemedium24" tools:text="@string/msg_selamat_datang2"/>
+            <TextView android:id="@+id/txtPadaPrortypeK"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.03"
+                android:text="@{sevenVM.sevenModel.txtPadaPrortypeK}"
+                style="@style/txtNiramitmedium12" tools:text="@string/msg_pada_prortype_k"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

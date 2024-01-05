@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="twentyoneVM" type="com.kahuripaninfox.app.modules.twentyone.data.viewmodel.TwentyoneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameTwentyOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnframe2608591"
+            android:layout_gravity="top|start"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView
+                android:background="@drawable/rectangle_bg_white_a700_4c_radius_4"
+                android:drawablePadding="@dimen/_28pxh"
+                android:drawableStart="@drawable/img_frame2608590"
+                android:ellipsize="end"
+                android:hint="@string/lbl_dark_mode2"
+                android:id="@+id/etFrame2608591"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_8pxv"
+                android:paddingEnd="@dimen/_17pxh"
+                android:paddingStart="@dimen/_15pxh"
+                android:paddingTop="@dimen/_7pxv"
+                android:singleLine="true"
+                android:text="@={twentyoneVM.twentyoneModel.etFrame2608591Value}"
+                android:textColorHint="@color/black_900"
+                style="@style/etSolidRounded" tools:ignore="Autofill"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowdarkmodeaplika"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDarkmodeAplika"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.73"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{twentyoneVM.twentyoneModel.txtDarkmodeAplika}"
+                    style="@style/txtPoppinsmedium16" tools:text="@string/msg_darkmode_aplika"/>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchMaterialComponentOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginStart="@dimen/_122pxh"
+                    android:layout_weight="0.27" android:layout_width="0dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

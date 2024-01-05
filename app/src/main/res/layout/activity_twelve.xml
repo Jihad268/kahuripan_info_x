@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="twelveVM" type="com.kahuripaninfox.app.modules.twelve.data.viewmodel.TwelveVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearTwelve"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnframe2608590"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_white_a700_4c_radius_4"
+                android:id="@+id/btnFrame2608590"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_40pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="@dimen/_40pxh"
+                android:paddingHorizontal="@dimen/_12pxh"
+                android:paddingVertical="@dimen/_12pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_frame2608590" tools:ignore="ContentDescription"/>
+            <ImageView android:gravity="start"
+                android:id="@+id/image500px036View"
+                android:layout_height="@dimen/_260pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_500px036view}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_500px036view"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnArahkanKePetaOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_64pxh"
+                android:layout_marginStart="@dimen/_64pxh"
+                android:layout_marginTop="@dimen/_39pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.03"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_arahkan_ke_peta"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_5" tools:text="@string/lbl_arahkan_ke_peta"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowlanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_64pxh"
+                android:layout_marginStart="@dimen/_64pxh"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="0.82"
+                    android:layout_width="0dp"
+                    android:letterSpacing="0.03"
+                    android:singleLine="true"
+                    android:text="@{twelveVM.twelveModel.txtLanguage}"
+                    style="@style/txtNobilemedium12_1" tools:text="@string/msg_feedback"/>
+                <ImageView android:id="@+id/imageStar"
+                    android:layout_height="@dimen/_12pxh"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_13pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_star"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_star"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFortyEight"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.11"
+                    android:layout_width="0dp"
+                    android:letterSpacing="0.03"
+                    android:singleLine="true"
+                    android:text="@{twelveVM.twelveModel.txtFortyEight}"
+                    style="@style/txtNobilemedium12_1" tools:text="@string/lbl_4_8"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDistance"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_64pxh"
+                android:layout_marginStart="@dimen/_64pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.03" android:singleLine="true"
+                android:text="@{twelveVM.twelveModel.txtDistance}"
+                style="@style/txtNobilemedium12_1" tools:text="@string/msg_jarak_dari_temp"/>
+        </LinearLayout>
+        <View android:background="@color/gray_500"
+            android:id="@+id/lineLineTwo"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_411pxh"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtApakahandaper"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_62pxh"
+            android:layout_marginStart="@dimen/_62pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.03" android:singleLine="true"
+            android:text="@{twelveVM.twelveModel.txtApakahandaper}"
+            style="@style/txtNobilemedium12" tools:text="@string/msg_apakah_anda_per"/>
+
+        <LinearLayout
+            android:id="@+id/linearRow"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/_62pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_62pxh"
+            android:layout_marginBottom="@dimen/_284pxv"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtButton"
+                android:gravity="center"
+                style="@style/txtSolidRoundedOutline_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_weight="0.51"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_2pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_1pxv"
+                android:singleLine="true"
+                android:text="@{twelveVM.twelveModel.txtButton}"
+                tools:text="@string/lbl_ya" />
+
+            <TextView
+                android:id="@+id/txtButtonOne"
+                android:gravity="center"
+                style="@style/txtSolidRoundedOutline_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_71pxh"
+                android:layout_weight="0.49"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:paddingStart="@dimen/_27pxh"
+                android:paddingTop="@dimen/_2pxv"
+                android:paddingEnd="@dimen/_27pxh"
+                android:paddingBottom="@dimen/_3pxv"
+                android:singleLine="true"
+                android:text="@{twelveVM.twelveModel.txtButtonOne}"
+                tools:text="@string/lbl_tidak" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

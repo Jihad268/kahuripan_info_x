@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.kahuripaninfox.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.kahuripaninfox.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.kahuripaninfox.app.modules.thirteen.ui.ThirteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.twentyone.ui.TwentyoneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.sixteen.ui.SixteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.nineteen.ui.NineteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.eighteen.ui.EighteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.two.ui.TwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.googlepixel2xltwocontainer.ui.GooglePixel2XlTwoContainerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.six.ui.SixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.fifteen.ui.FifteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.one.ui.OneActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.kahuripaninfox.app.modules.alpha.ui.AlphaActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.five.ui.FiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.fourteen.ui.FourteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.twentytwo.ui.TwentytwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.twenty.ui.TwentyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.seventeen.ui.SeventeenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.nine.ui.NineActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.ten.ui.TenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.twelve.ui.TwelveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.three.ui.ThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kahuripaninfox.app.modules.eleven.ui.ElevenActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

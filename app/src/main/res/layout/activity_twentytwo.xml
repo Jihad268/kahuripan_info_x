@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="twentytwoVM" type="com.kahuripaninfox.app.modules.twentytwo.data.viewmodel.TwentytwoVM"/>
+    </data>
+    <LinearLayout android:gravity="end"
+        android:id="@+id/linearTwentyTwo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <EditText
+            android:background="@drawable/rectangle_bg_white_a700_4c_radius_4"
+            android:drawablePadding="@dimen/_28pxh"
+            android:drawableStart="@drawable/img_frame2608590"
+            android:ellipsize="end" android:hint="@string/lbl_komentar2"
+            android:id="@+id/etFrame2608590" android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_254pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_8pxv"
+            android:paddingEnd="@dimen/_16pxh"
+            android:paddingStart="@dimen/_15pxh"
+            android:paddingTop="@dimen/_7pxv" android:singleLine="true"
+            android:text="@={twentytwoVM.twentytwoModel.etFrame2608590Value}"
+            android:textColorHint="@color/black_900"
+            style="@style/etSolidRounded" tools:ignore="Autofill"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnrajaairlangga"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_38pxh"
+            android:layout_marginStart="@dimen/_46pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <FrameLayout android:id="@+id/frameStackrajaairlangga"
+                android:layout_height="@dimen/_138pxv"
+                android:layout_width="@dimen/_327pxh" style="@style/groupStylecornerRadius_1">
+                <ImageView android:id="@+id/imageRajaairlangga"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_138pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_295pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_rajaairlangga}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rajaairlangga"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRajaAirlanggaOne"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.04" android:singleLine="true"
+                android:text="@{twentytwoVM.twentytwoModel.txtRajaAirlanggaOne}"
+                style="@style/txtNobilemedium15" tools:text="@string/lbl_raja_airlangga"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.04" android:singleLine="true"
+                android:text="@{twentytwoVM.twentytwoModel.txtLanguage}"
+                style="@style/txtNiramitmedium14" tools:text="@string/lbl_top_comment"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtKHXperience"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{twentytwoVM.twentytwoModel.txtKHXperience}"
+                style="@style/txtRobotoromanregular12" tools:text="@string/msg_kh_xperience"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtArtikelyangba"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_249pxh"
+            android:layout_marginStart="@dimen/_46pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{twentytwoVM.twentytwoModel.txtArtikelyangba}"
+            style="@style/txtRobotoromanregular14_1" tools:text="@string/msg_artikel_yang_ba"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="eightVM" type="com.kahuripaninfox.app.modules.eight.data.viewmodel.EightVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameEight"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_20pxv"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnunsplashjmurdh"
+            android:layout_gravity="top|start"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStackunion"
+                android:layout_height="@dimen/_220pxv" android:layout_width="match_parent">
+                <LinearLayout android:id="@+id/linearColumnunion"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylegray_901">
+                    <ImageView android:id="@+id/imageUnion"
+                        android:layout_gravity="end"
+                        android:layout_height="@dimen/_19pxh"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_29pxv"
+                        android:layout_width="@dimen/_16pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_union"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_union"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtProfile"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_115pxv"
+                        android:layout_marginEnd="@dimen/_180pxh"
+                        android:layout_marginStart="@dimen/_180pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{eightVM.eightModel.txtProfile}"
+                        style="@style/txtPoppinssemibold15" tools:text="@string/lbl_profile"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageUnsplashjmURdh"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="@dimen/_122pxh"
+                    android:layout_marginEnd="@dimen/_141pxh"
+                    android:layout_marginStart="@dimen/_141pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_129pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_unsplashjmurdh}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashjmurdh"/>
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnEditProfile"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_29pxv"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="@dimen/_105pxh"
+                android:paddingBottom="@dimen/_5pxv"
+                android:paddingEnd="@dimen/_21pxh"
+                android:paddingStart="@dimen/_21pxh"
+                android:paddingTop="@dimen/_5pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_edit_profile"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_edit_profile"/>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtGroupThirtySix"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_2pxv"
+                android:paddingStart="@dimen/_27pxh"
+                android:paddingTop="@dimen/_5pxv"
+                android:singleLine="true"
+                android:text="@{eightVM.eightModel.txtGroupThirtySix}"
+                style="@style/txtSolid" tools:text="@string/lbl_pengaturan"/>
+            <LinearLayout android:id="@+id/linearRowarrowright"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_29pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowtranslate"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageTranslate"
+                        android:layout_height="@dimen/_15pxh"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="@dimen/_17pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_translate"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_translate"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBahasa"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_weight="0.76"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{eightVM.eightModel.txtBahasa}"
+                        style="@style/txtPoppinsmedium15" tools:text="@string/lbl_bahasa"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageArrowright"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_245pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="@dimen/_6pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowright"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowarrowrightOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowvector"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageVector"
+                        android:layout_height="@dimen/_19pxh"
+                        android:layout_marginBottom="@dimen/_2pxv"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="@dimen/_20pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_vector_black_900"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector_black_900"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDarkmode"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_weight="0.8"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{eightVM.eightModel.txtDarkmode}"
+                        style="@style/txtPoppinsmedium15" tools:text="@string/lbl_darkmode"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageArrowrightOne"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_224pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_6pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowright"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtGroupThirtyFive"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_56pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_2pxv"
+                android:paddingStart="@dimen/_27pxh"
+                android:paddingTop="@dimen/_5pxv"
+                android:singleLine="true"
+                android:text="@{eightVM.eightModel.txtGroupThirtyFive}"
+                style="@style/txtSolid" tools:text="@string/lbl_logout"/>
+            <LinearLayout android:id="@+id/linearRowarrowrightTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowexitlogout285"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.93"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageExitlogout285"
+                        android:layout_height="@dimen/_28pxh"
+                        android:layout_width="@dimen/_26pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_exitlogout285"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_exitlogout285"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtLogoutOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2pxv"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_weight="0.67"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{eightVM.eightModel.txtLogoutOne}"
+                        style="@style/txtPoppinsmedium15" tools:text="@string/lbl_logout"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageArrowrightTwo"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_247pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="@dimen/_6pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowright"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

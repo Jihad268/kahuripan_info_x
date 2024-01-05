@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSliderbaganscenemyaModel" type="com.kahuripaninfox.app.modules.googlepixel2xltwo.data.model.ImageSliderSliderbaganscenemyaModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackbaganscenemya"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageBaganscenemya"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_164pxh"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageUrl="@{imageSliderSliderbaganscenemyaModel.imageBaganscenemya}"
+            placeHolder="@{@drawable/image_not_found}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_baganscenemya"/>
+        <LinearLayout android:id="@+id/linearColumnselamatdatang"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_7pxv"
+            android:layout_marginEnd="@dimen/_7pxh"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtSelamatDatang"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="match_parent"
+                android:text="@{imageSliderSliderbaganscenemyaModel.txtSelamatDatang}"
+                style="@style/txtIntersemibold24" tools:text="@string/msg_selamat_datang"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnMoreInfo"
+                android:layout_height="@dimen/_22pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="@dimen/_75pxh"
+                android:paddingBottom="@dimen/_3pxv"
+                android:paddingEnd="@dimen/_13pxh"
+                android:paddingStart="@dimen/_14pxh"
+                android:paddingTop="@dimen/_3pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_more_info"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_more_info"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

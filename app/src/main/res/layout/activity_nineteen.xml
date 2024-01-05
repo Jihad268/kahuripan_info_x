@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="nineteenVM" type="com.kahuripaninfox.app.modules.nineteen.data.viewmodel.NineteenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameNineteen"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_21pxv"
+        android:layout_marginEnd="@dimen/_18pxh"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowvector"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylewhite_A700_4ccornerRadius">
+                <ImageView android:id="@+id/imageVector"
+                    android:layout_height="@dimen/_15pxh"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="@dimen/_7pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_frame2608590"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_frame2608590"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtInformasi"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:layout_marginEnd="@dimen/_22pxh"
+                    android:layout_marginStart="@dimen/_33pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_weight="0.92"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{nineteenVM.nineteenModel.txtInformasi}"
+                    style="@style/txtPoppinssemibold16" tools:text="@string/lbl_informasi"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linearColumnframethirteen"
+            android:layout_gravity="top|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <ImageView android:id="@+id/imageFrameThirteen"
+                android:layout_height="@dimen/_59pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY" cornerRadius="@{@dimen/_6pxh}"
+                imageRes="@{@drawable/img_frame13}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_frame13"/>
+            <ImageView android:id="@+id/imageBaganscenemya"
+                android:layout_height="@dimen/_153pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_baganscenemya}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_baganscenemya"/>
+            <TextView android:ellipsize="end"
+
+                android:id="@+id/txtKURIPrototy"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.04" android:singleLine="true"
+                android:text="@{nineteenVM.nineteenModel.txtKURIPANPrototy}"
+                style="@style/txtNobilemedium14" tools:text="@string/msg_kuripan_prototy"/>
+            <TextView
+                android:id="@+id/txtPadaPrortypeK"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_11pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.03"
+                android:text="@{nineteenVM.nineteenModel.txtPadaPrortypeK}"
+                style="@style/txtNiramitmedium12" tools:text="@string/msg_pada_prortype_k"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameBottombar"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="wrap_content" style="@style/groupStylewhite_4">
+            <LinearLayout android:id="@+id/linearRowvectorOne"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearHome"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="1" android:layout_width="0dp" android:orientation="vertical"/>
+                <LinearLayout android:id="@+id/linearSearch"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="1" android:layout_width="0dp" android:orientation="vertical"/>
+                <LinearLayout android:id="@+id/linearProfile"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="1" android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</layout>
